@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -15,14 +15,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -91,7 +91,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/myprofile.jpeg" alt="" class="img-fluid rounded-circle">
+      <img src="img/myprofile.jpeg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -118,7 +118,6 @@
   </header>
 
   <main class="main">
-    <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">Skills Pie Chart</h1>
@@ -129,16 +128,14 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Chart Section -->
     <section class="chart-section section">
       <div class="chart-container" data-aos="fade-up">
         <h2>PIE-CHART</h2>
         <canvas id="skillsPieChart" width="350" height="350"></canvas>
       </div>
     </section>
-    <!-- /Chart Section -->
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -159,19 +156,19 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Chart.js Pie Chart Script -->
   <script>
@@ -184,12 +181,12 @@
           label: 'Skill Proficiency',
           data: [100, 90, 75, 80, 90, 60],
           backgroundColor: [
-            '#007bff', // HTML
-            '#3399ff', // CSS
-            '#66b3ff', // PYTHON
-            '#99ccff', // PGDCA
-            '#cce5ff', // Team Work
-            '#e6f2ff'  // COMMUNICATION
+            '#007bff',
+            '#3399ff',
+            '#66b3ff',
+            '#99ccff',
+            '#cce5ff',
+            '#e6f2ff'
           ],
           borderColor: '#222',
           borderWidth: 2
@@ -215,20 +212,22 @@
             }
           }
         },
-      onClick: function(evt, elements) {
-        if (elements.length > 0) {
-          const idx = elements[0].index;
-          const links = [
-            "https://www.w3schools.com/html/",        // HTML
-            "https://www.w3schools.com/css/",         // CSS
-            "https://www.python.org/",                // PYTHON
-            "https://en.wikipedia.org/wiki/PGDCA",    // PGDCA
-            "https://www.mindtools.com/a4wo2z8/teamwork-skills", // Team Work
-            "https://www.skillsyouneed.com/ips/communication-skills.html" // COMMUNICATION
-          ];
-          window.open(links[idx], "_blank");
+        onClick: function(evt, elements) {
+          if (elements.length > 0) {
+            const idx = elements[0].index;
+            const links = [
+              "https://www.w3schools.com/html/",
+              "https://www.w3schools.com/css/",
+              "https://www.python.org/",
+              "https://en.wikipedia.org/wiki/PGDCA",
+              "https://www.mindtools.com/a4wo2z8/teamwork-skills",
+              "https://www.skillsyouneed.com/ips/communication-skills.html"
+            ];
+            window.open(links[idx], "_blank");
+          }
         }
       }
-    }
-  });
+    });
   </script>
+</body>
+</html>
